@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Floppy Bird</title>
+
+   <meta name="author" content="Nebez Briefkani">
+   <meta name="description" content="play floppy bird. a remake of popular game flappy bird built in html/css/js">
+   <meta name="keywords"
+      content="flappybird,flappy,bird,floppybird,floppy,html,html5,css,css3,js,javascript,jquery,github,nebez,briefkani,nebezb,open,source,opensource">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+   <meta property="og:title" content="Floppy Bird">
+   <meta property="og:description"
+      content="play floppy bird. a remake of popular game flappy bird built in html/css/js">
+   <meta property="og:type" content="website">
+   <meta property="og:image" content="https://nebezb.com/floppybird/assets/thumb.png">
+   <meta property="og:url" content="https://nebezb.com/floppybird/">
+   <meta property="og:site_name" content="Floppy Bird">
+
+   <link href="./flappyBird_files/reset.css" rel="stylesheet">
+   <link href="./flappyBird_files/main.css" rel="stylesheet">
+</head>
+
+<body style="">
+   <div id="gamecontainer">
+      <div id="gamescreen">
+         <div id="sky" class="animated" style="animation-play-state: paused;">
+            <div id="flyarea">
+               <div id="ceiling" class="animated" style="animation-play-state: paused;"></div>
+               <div id="player" class="bird animated"
+                  style="transform: translate(0px, 199.318px) rotate(90deg); top: 191.05px; animation-play-state: paused;">
+               </div>
+
+               <div id="bigscore"></div>
+
+               <div id="splash" style="opacity: 0;"></div>
+
+               <div id="scoreboard" style="display: block; transform: translate(0px, 0px); opacity: 1;">
+                  <div id="medal"></div>
+                  <div id="currentscore"><img src="./flappyBird_files/font_small_0.png" alt="0"></div>
+                  <div id="highscore"><img src="./flappyBird_files/font_small_3.png" alt="3"></div>
+                  <div id="replay" style="transform: translate(0px, 0px); opacity: 1;"><img
+                        src="./flappyBird_files/replay.png" alt="replay"></div>
+               </div>
+
+               <div class="pipe animated" style="animation-play-state: paused;">
+                  <div class="pipe_upper" style="height: 190px;"></div>
+                  <div class="pipe_lower" style="height: 140px;"></div>
+               </div>
+               <div class="pipe animated" style="animation-play-state: paused;">
+                  <div class="pipe_upper" style="height: 103px;"></div>
+                  <div class="pipe_lower" style="height: 227px;"></div>
+               </div>
+               <div class="pipe animated" style="animation-play-state: paused;">
+                  <div class="pipe_upper" style="height: 166px;"></div>
+                  <div class="pipe_lower" style="height: 164px;"></div>
+               </div>
+               <div class="pipe animated" style="animation-play-state: paused;">
+                  <div class="pipe_upper" style="height: 227px;"></div>
+                  <div class="pipe_lower" style="height: 103px;"></div>
+               </div>
+               <div class="pipe animated" style="animation-play-state: paused;">
+                  <div class="pipe_upper" style="height: 171px;"></div>
+                  <div class="pipe_lower" style="height: 159px;"></div>
+               </div>
+            </div>
+         </div>
+         <div id="land" class="animated" style="animation-play-state: paused;">
+            <div id="debug"></div>
+         </div>
+      </div>
+   </div>
+   <div id="footer">
+
+
+
+   </div>
+   <div class="boundingbox" id="playerbox"></div>
+   <div class="boundingbox" id="pipebox"></div>
+
+   <script src="./flappyBird_files/jquery.min.js.загрузка"></script>
+   <script src="./flappyBird_files/jquery.transit.min.js.загрузка"></script>
+   <script src="./flappyBird_files/buzz.min.js.загрузка"></script>
+   <script src="./flappyBird_files/main.js.загрузка"></script>
+
+   <script>
+      function inIframe() {
+         try {
+            return window.self !== window.top;
+         } catch (e) {
+            return true;
+         }
+      }
+      if (!inIframe() && window.location.hostname == 'nebezb.com') {
+         window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+         ga('create', 'UA-48047334-1', 'auto');
+         ga('send', 'pageview');
+      }
+   </script>
+   <script async="" src="./flappyBird_files/analytics.js.загрузка"></script>
+
+
+</body>
+
+</html>
